@@ -44,26 +44,26 @@ class LinkedList{
     public boolean find(int data){
         boolean hasil = false;
         Node current = first;
-        while(current != null){
+        while(current != null){//diulang selama current tidak sama dengan null
             if(current.data == data){
-                hasil = true;
-                break;
+                hasil = true;//jika ada data yang sama maka hasil berubah true
+                break;//hentikan perulangan
             }
-                current = current.next;
+                current = current.next;//i++
                 
         }
            return hasil; 
     }
     
     public void deletFirst(){
-        first = first.next;
+        first = first.next;//first pindah ke next
     }
     public void delete(int data){
         Node current = first;
-        Node before = first;
-        if(first.data == data){
+        Node before = first;//digunakan untuk node sebelumnya
+        if(first.data == data){//jika data yang dihapus node depan
             first = first.next;
-        }else{
+        }else{//jika yang dihapus bukan node depan
             current = current.next;
             while(current != null){
                 if(current.data == data){
@@ -89,6 +89,7 @@ public class MySingleLL {
         my.insertLast(80);
         
         my.delete(60);
+        my.insertFisrt(100);
         my.display();
     }
 }
