@@ -9,7 +9,7 @@ class Node{
     
 }
 
-public class DasarLinkedList {
+public class DasarSingleLinkedList {
     public static void main(String[] args) {
         Node current;//node null
         Node node1 = new Node(10);//buat node baru bernama node1

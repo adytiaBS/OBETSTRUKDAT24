@@ -78,7 +78,7 @@ class LinkedList{
     
 }
 
-public class MySingleLL {
+public class MySingleLinkedList {
     public static void main(String[] args) {
         LinkedList my = new LinkedList();
         my.insertLast(10);
