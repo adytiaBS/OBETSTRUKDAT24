@@ -11,11 +11,18 @@ class MyStack{
     }
     
     public void push(char newData){
-        data[++top] = newData;
+        if(!isFUll()){
+            data[++top] = newData;
+        }
     }
     
     public char pop(){
-        return data[top--];
+        char hasil;
+        hasil = 's';
+        if(!isEmpty()){
+            hasil = data[top--];
+        }
+        return hasil;
     }
     
     public void display(){
@@ -29,7 +36,7 @@ class MyStack{
     }
     
     public boolean isFUll(){
-        return top==size;
+        return top==size-1;
     }
     
 }
@@ -38,14 +45,9 @@ public class DasarStack {
     public static void main(String[] args) {
         MyStack my = new MyStack(6);
         my.push('A');
-        my.push('B');
-        my.push('C');
         my.pop();
         my.pop();
-        my.pop();
-        my.push('Z');
         
-        System.out.println(my.isEmpty());
         my.display();
         
     }
