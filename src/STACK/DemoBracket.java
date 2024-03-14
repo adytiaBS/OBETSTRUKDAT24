@@ -9,6 +9,11 @@ class Bracket {
         this.input = input;
         stack = new MyStack(input.length());
     }
+    
+    public void setInput(String input){
+        this.input = input;
+        stack = new MyStack(input.length());
+    }
 
     public void check() {
         char ch;
@@ -31,7 +36,8 @@ class Bracket {
     public class DemoBracket {
 
         public static void main(String[] args) {
-            Bracket my = new Bracket("{([]{}))}");
+            Bracket my = new Bracket("");
+            my.setInput("a{b(c[d]e}f}");
             my.check();
 
         }
