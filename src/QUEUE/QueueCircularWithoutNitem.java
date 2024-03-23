@@ -45,18 +45,13 @@ class MyQueueCircularX {
         return front-1==rear || front+maxSize-1 == rear;
     //  kondisi belum circular || kondisi circular
     }
-
     public boolean isFull() {
         return rear-front==maxSize-1 || front-1==rear;
         //  kondisi belum circular || kondisi circular
     }
-
     public int peek() {
         return data[front];
     }
-
-    
-
 }
 
 public class QueueCircularWithoutNitem {
