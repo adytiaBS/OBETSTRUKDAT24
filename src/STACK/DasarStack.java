@@ -47,16 +47,13 @@ class MyStack{
 public class DasarStack {
     public static void main(String[] args) {
         MyStack my = new MyStack(6);
-        my.push('A');
-        my.push('B');
-        my.push('C');
-        my.pop();
-        my.push('Z');
-        
-        //my.reset();
+        my.push('A'); my.reset();my.push('C');
+        char ch = my.pop();
+        my.isEmpty(); my.push('Z');my.peek();
         my.push('S');
+        ch = my.pop();
+        System.out.println(ch);
         my.display();
-        System.out.println("\ndata paling atas : "+my.peek());
         
     }
 }

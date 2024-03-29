@@ -7,21 +7,22 @@ class MyQueueCircular {
     int front;//var menunjuk data paling belakang
     int[] data;
     int nItem;
-
     public MyQueueCircular(int maxSize) {
         this.maxSize = maxSize;
         rear = -1;
         front = 0;
         data = new int[maxSize];
         nItem = 0;
+       
     }
 
     public void insert(int newData) {
         if (rear == maxSize - 1) {
-            rear = -1;
-        }
-        data[++rear] = newData;
-        nItem++;
+                rear = -1;
+            }
+            data[++rear] = newData;
+            nItem++;
+        
     }
 
     public int remove() {
@@ -70,7 +71,7 @@ public class QueueCircular {
         MyQueueCircular my = new MyQueueCircular(5);
         my.insert(10);
         my.insert(20);
-        my.insert(30);
+        my.insert(15);
         my.insert(40);
         my.insert(50);
         my.remove();

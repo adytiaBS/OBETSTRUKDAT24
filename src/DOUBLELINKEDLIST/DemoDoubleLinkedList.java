@@ -1,6 +1,6 @@
 package DOUBLELINKEDLIST;
 
-class MyDouble {
+class MyDoubleLinkedList {
     Node first;
     Node last;
 
@@ -104,16 +104,15 @@ class MyDouble {
 public class DemoDoubleLinkedList {
 
     public static void main(String[] args) {
-            MyDouble my = new MyDouble();
+            MyDoubleLinkedList my = new MyDoubleLinkedList();
             my.insertFirst(10);
-            my.insertFirst(20);
-            my.insertAfter(20, 25);
-            
-            /*my.deleteFirst();
+            my.insertLast(11);
+            my.insertLast(50);
+            my.insertAfter(11, 25);
+            my.deleteKey(11);
+            my.deleteFirst();
+            int data = ++my.first.next.data;
+            System.out.println(data++);
             my.displayForward();
-            System.out.println("");
-            my.deleteFirst();
-            my.deleteFirst();
-            my.displayForward();*/
     }
 }

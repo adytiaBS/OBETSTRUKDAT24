@@ -87,7 +87,6 @@ public class MySingleLinkedList {
         my.insertFisrt(50);
         my.insertLast(60);
         my.insertLast(80);
-        
         my.delete(60);
         my.insertFisrt(100);
         my.display();
